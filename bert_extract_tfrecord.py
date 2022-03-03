@@ -477,7 +477,7 @@ def main(_):
 
   with codecs.getwriter("utf-8")(tf.gfile.Open(FLAGS.output_file,"w")) as writer:
     for record in result1:
-      result = _decode_record(record, name_to_features)
+      #result = _decode_record(record, name_to_features)
       
       # The remaining part remains the same once the predictions from generator are decoded to Examples.
       unique_id = int(result["unique_id"])
